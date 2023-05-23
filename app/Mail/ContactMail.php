@@ -23,6 +23,9 @@ class ContactMail extends Mailable
      */
     public function __construct($_user, $_email, $_body)
     {
+        $this->user = $_user;
+        $this->email = $_email;
+        $this->body = $_body;
     }
 
     /**
@@ -42,7 +45,7 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'view.name',
+            view: 'mail.contact-mail',
         );
     }
 
