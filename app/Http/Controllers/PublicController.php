@@ -10,4 +10,8 @@ class PublicController extends Controller
     {
         return view('home');
     }
+    public function upload()
+    {
+        return view('upload');
+    }
 }
