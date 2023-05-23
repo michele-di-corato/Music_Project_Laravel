@@ -5,3 +5,20 @@
     --font-title: "Oswald", sans-serif;
     --font-gen: "Lato", sans-serif;
 }
+h1 {
+    font-family: var(--font-title);
+    font-size: 100px;
+    color: var(--acc);
+}
+.navbar {
+    background-color: var(--main);
+}
+.nav-link,
+.navbar-brand {
+    color: var(--acc);
+}
+@media screen and (width < 768px) {
+    h1 {
+        font-size: 60px;
+    }
+}

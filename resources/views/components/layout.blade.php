@@ -16,6 +16,7 @@
 
 <body>
     <x-header />
+    <x-navbar />
     {{ $slot }}
 </body>
 

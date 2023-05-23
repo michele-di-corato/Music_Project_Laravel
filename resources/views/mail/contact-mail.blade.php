@@ -10,7 +10,7 @@
 
 <body>
     <h1>E-mail from: {{ $user }} - {{ $email }}</h1>
-    <p>Message sent from the customer: {{ $text }}</p>
+    <p>Message sent from the customer: {{ $body }}</p>
 </body>
 
 </html>
