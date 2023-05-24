@@ -1,6 +1,6 @@
 <x-layout title="Upload a song">
     <main class="container-fluid">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-12 col-md-8 my-5">
                 <form method="POST" action="{{ route('saveSong') }}">
                     @csrf
@@ -16,7 +16,7 @@
                         <label for="InputDate" class="form-label">Release date</label>
                         <input type="number" class="form-control" id="InputDate" name="date">
                     </div>
-                    <button type="submit" class="btn btn-outline-warning">Submit</button>
+                    <x-button />
                 </form>
             </div>
         </div>

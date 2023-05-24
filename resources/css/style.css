@@ -31,6 +31,16 @@ header {
     background-size: cover;
     background-position: center;
 }
+main {
+    background-color: var(--neut);
+}
+label {
+    color: var(--acc);
+}
+.foot-link {
+    text-decoration: none;
+    color: var(--main);
+}
 footer {
     background-image: linear-gradient(
             to right,
@@ -69,4 +79,23 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
     }
+    .foot-link {
+        color: var(--acc);
+    }
+}
+.gen-button {
+    background-color: var(--main);
+    color: var(--acc);
+    border: solid 2px var(--main);
+    border-radius: 16px;
+    text-decoration: none;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    transition: 0.5s;
+}
+.gen-button:hover {
+    background-color: var(--acc);
+    color: var(--main);
 }

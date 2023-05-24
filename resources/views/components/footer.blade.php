@@ -3,28 +3,28 @@
         <div class="col-5 col-md-2 m-3">
             <h4 class="text-center text-md-start">Services</h4>
             <ul>
-                <li>Uploading</li>
-                <li>Downloading</li>
-                <li>Browsing</li>
-                <li>Listening</li>
-                <li>Sharing</li>
+                <li><a href="#" class="foot-link">Uploading</a></li>
+                <li><a href="#" class="foot-link">Downloading</a></li>
+                <li><a href="#" class="foot-link">Browsing</a></li>
+                <li><a href="#" class="foot-link">Listening</a></li>
+                <li><a href="#" class="foot-link">Sharing</a></li>
             </ul>
         </div>
         <div class="col-5 col-md-2 m-3">
             <h4 class="text-center text-md-start">Support</h4>
             <ul>
-                <li>About us</li>
-                <li>Contacts</li>
-                <li>FAQ</li>
-                <li>Links</li>
+                <li><a href="#" class="foot-link">About us</a></li>
+                <li><a href="#" class="foot-link">Contacts</a></li>
+                <li><a href="#" class="foot-link">FAQ</a></li>
+                <li><a href="#" class="foot-link">Links</a></li>
             </ul>
         </div>
         <div class="col-5 col-md-2 m-3">
             <h4 class="text-center text-md-start">Our Team</h4>
             <ul>
-                <li>Me</li>
-                <li>Myself</li>
-                <li>& I</li>
+                <li><a href="#" class="foot-link">Me</a></li>
+                <li><a href="#" class="foot-link">Myself</a></li>
+                <li><a href="#" class="foot-link">& I</a></li>
             </ul>
         </div>
     </div>

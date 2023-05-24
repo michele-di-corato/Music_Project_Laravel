@@ -24,7 +24,7 @@
                         <label for="TextBody" class="form-label">Enter your message</label>
                         <textarea name="body" id="TextBody" cols="30" rows="10" class="form-control"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-outline-warning">Submit</button>
+                    <x-button />
                 </form>
             </div>
         </div>
