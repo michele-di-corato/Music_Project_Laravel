@@ -5,10 +5,10 @@
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h4 class="mb-1">{{ $title }}</h4>
-                <h4 class="mb-1">{{ $author }}</h4>
-                <h5 class="mb-1">{{ $date }}</p>
-                    <a href="#" class="gen-button">Listen to the song</a>
+                <h5 class="mb-2">{{ $title }}</h5>
+                <h5 class="mb-2">{{ $author }}</h5>
+                <h5 class="mb-3">{{ $date }}</h5>
+                <a href="#" class="gen-button">Listen to the song</a>
             </div>
         </div>
     </div>
