@@ -1,7 +1,7 @@
 :root {
     --main: #191970;
     --acc: #bf00ff;
-    --neut: #f5f5f5;
+    --neut: #e4e4e4;
     --font-title: "Oswald", sans-serif;
     --font-gen: "Lato", sans-serif;
 }
@@ -17,8 +17,56 @@ h1 {
 .navbar-brand {
     color: var(--acc);
 }
+
+header {
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url(/public/media/BackgroundHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+footer {
+    background-image: linear-gradient(
+            to right,
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 1),
+            rgba(228, 228, 228, 0),
+            rgba(228, 228, 228, 0),
+            rgba(228, 228, 228, 0)
+        ),
+        url(/public/media/BackgroundFooter.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    height: 50vh;
+    border-top: solid 4px var(--acc);
+    color: var(--main);
+    text-align: justify;
+}
 @media screen and (width < 768px) {
     h1 {
         font-size: 60px;
+    }
+    footer {
+        background-image: linear-gradient(
+                rgba(0, 0, 0, 0.6),
+                rgba(0, 0, 0, 0.6)
+            ),
+            url(/public/media/BackgroundFooter.jpg);
+        color: var(--acc);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
