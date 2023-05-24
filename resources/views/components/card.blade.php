@@ -5,9 +5,9 @@
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h4 class="mb-1">Title</h4>
-                <h4 class="mb-1">Author</h4>
-                <h5 class="mb-1">Release date</p>
+                <h4 class="mb-1">{{ $title }}</h4>
+                <h4 class="mb-1">{{ $author }}</h4>
+                <h5 class="mb-1">{{ $date }}</p>
                     <a href="#" class="gen-button">Listen to the song</a>
             </div>
         </div>

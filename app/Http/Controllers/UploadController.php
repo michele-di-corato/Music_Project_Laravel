@@ -11,10 +11,6 @@ class UploadController extends Controller
     {
         return view('upload');
     }
-    public function library()
-    {
-        return view('library');
-    }
     public function saveSong(Request $request)
     {
         $song = Upload::create(
@@ -25,5 +21,10 @@ class UploadController extends Controller
             ]
         );
         return redirect(route('library'))->with('status', 'Song added successfully!');
+    }
+    public function library()
+    {
+        $songs = Upload::all();
+        return view('library', compact('songs'));
     }
 }

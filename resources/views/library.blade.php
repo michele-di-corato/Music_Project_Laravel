@@ -9,8 +9,10 @@
                 </div>
             @endif
         </div>
-        <div class="row">
-            <x-card />
+        <div class="row justify-content-evenly">
+            @foreach ($songs as $song)
+                <x-card title="{{ $song->title }}" author="{{ $song->author }}" date="{{ $song->date }}" />
+            @endforeach
         </div>
     </main>
 </x-layout>
