@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Upload;
+use App\Http\Requests\UploadRequest;
 
 class UploadController extends Controller
 {
@@ -11,7 +12,7 @@ class UploadController extends Controller
     {
         return view('upload');
     }
-    public function saveSong(Request $request)
+    public function saveSong(UploadRequest $request)
     {
         $song = Upload::create(
             [

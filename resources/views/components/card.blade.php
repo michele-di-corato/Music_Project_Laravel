@@ -1,7 +1,7 @@
-<div class="card my-3 col-10 col-md-3" style="max-width: 540px;">
+<div class="card m-3 col-10 col-md-3" style="max-width: 540px;">
     <div class="row g-0">
         <div class="col-4">
-            <img src="{{ $cover }}" class="img-fluid rounded-start mt-2" alt="Song cover">
+            <img src="{{ $cover }}" class="img-fluid rounded my-2" alt="Song cover">
         </div>
         <div class="col-8">
             <div class="card-body">

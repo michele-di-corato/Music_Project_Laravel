@@ -12,7 +12,7 @@
         <div class="row justify-content-evenly">
             @foreach ($songs as $song)
                 <x-card title="{{ $song->title }}" author="{{ $song->author }}" date="{{ $song->date }}"
-                    link="{{ route('songDetails', $song->id) }}" cover="{{ $song->cover }}" />
+                    link="{{ route('songDetails', $song->id) }}" cover="{{ Storage::url($song->cover) }}" />
             @endforeach
         </div>
     </main>
