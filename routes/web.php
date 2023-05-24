@@ -28,3 +28,5 @@ Route::get('/upload_a_song', [UploadController::class, 'upload'])->name('upload'
 Route::get('/library', [UploadController::class, 'library'])->name('library');
 
 Route::post('/upload_a_song/save_song', [UploadController::class, 'saveSong'])->name('saveSong');
+
+Route::get('/library/song_details/{id}', [UploadController::class, 'details'])->name('songDetails');

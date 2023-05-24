@@ -27,4 +27,9 @@ class UploadController extends Controller
         $songs = Upload::all();
         return view('library', compact('songs'));
     }
+    public function details($id)
+    {
+        $song = Upload::findOrFail($id);
+        return view('song-details', compact('song'));
+    }
 }

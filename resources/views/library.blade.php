@@ -1,4 +1,4 @@
-<x-layout>
+<x-layout title="Music Library">
     <main class="container-fluid">
         <div class="row w-100">
             @if (session('status'))
@@ -11,7 +11,8 @@
         </div>
         <div class="row justify-content-evenly">
             @foreach ($songs as $song)
-                <x-card title="{{ $song->title }}" author="{{ $song->author }}" date="{{ $song->date }}" />
+                <x-card title="{{ $song->title }}" author="{{ $song->author }}" date="{{ $song->date }}"
+                    link="{{ route('songDetails', $song->id) }}" />
             @endforeach
         </div>
     </main>

@@ -8,7 +8,7 @@
                 <h5 class="mb-2">{{ $title }}</h5>
                 <h5 class="mb-2">{{ $author }}</h5>
                 <h5 class="mb-3">{{ $date }}</h5>
-                <a href="#" class="gen-button">Listen to the song</a>
+                <a href="{{ $link }}" class="gen-button">Listen to the song</a>
             </div>
         </div>
     </div>
