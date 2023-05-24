@@ -1,9 +1,9 @@
-<div class="card my-3 col-5 col-md-3" style="max-width: 540px;">
+<div class="card my-3 col-10 col-md-3" style="max-width: 540px;">
     <div class="row g-0">
-        <div class="col-md-4">
-            <img src="#" class="img-fluid rounded-start" alt="#">
+        <div class="col-4">
+            <img src="{{ $cover }}" class="img-fluid rounded-start mt-2" alt="Song cover">
         </div>
-        <div class="col-md-8">
+        <div class="col-8">
             <div class="card-body">
                 <h5 class="mb-2">{{ $title }}</h5>
                 <h5 class="mb-2">{{ $author }}</h5>

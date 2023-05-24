@@ -17,7 +17,8 @@ class UploadController extends Controller
             [
                 'title' => $request->title,
                 'author' => $request->author,
-                'date' => $request->date
+                'date' => $request->date,
+                'cover' => $request->file('cover')->store('public/media')
             ]
         );
         return redirect(route('library'))->with('status', 'Song added successfully!');
