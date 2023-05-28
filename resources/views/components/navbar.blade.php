@@ -16,6 +16,34 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('library') }}">Songs library</a>
                 </li>
+                @auth
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Welcome back, {{ Auth::user()->name }}
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Your profile</a></li>
+                            <li>
+                                <form action="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button class="dropdown-item" type="submit">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                @else
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            User Access
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{{ route('register') }}">Register</a></li>
+                            <li><a class="dropdown-item" href="{{ route('login') }}">Login</a></li>
+                        </ul>
+                    </li>
+                @endauth
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('support') }}">Support</a>
                 </li>

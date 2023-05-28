@@ -8,6 +8,10 @@ use App\Http\Requests\UploadRequest;
 
 class UploadController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('library');
+    }
     public function upload()
     {
         return view('upload');
