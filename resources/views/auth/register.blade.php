@@ -1,4 +1,4 @@
-<x-layout title="Register new user">
+<x-layout title="Register new user" heading="Register a new user">
     <main class="container-fluid py-5">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8">

@@ -1,4 +1,4 @@
-<x-layout title="{{ $song->title }} - {{ $song->author }}">
+<x-layout title="{{ $song->title }} - {{ $song->author }} " heading="Song details">
     <main class="container-fluid vh-100">
         <div class="row">
             <div class="col-10 col-md-3">{{ $song->title }}</div>

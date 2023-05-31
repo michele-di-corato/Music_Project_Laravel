@@ -1,4 +1,4 @@
-<x-layout title="Upload a song">
+<x-layout title="Upload a song" heading="Upload a song">
     <main class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 my-5">
@@ -13,10 +13,10 @@
                         @enderror
                     </div>
                     <div class="mb-3">
-                        <label for="InputAuthor" class="form-label">Author</label>
-                        <input type="text" class="form-control @error('author') is-invalid @enderror"
-                            id="InputAuthor" name="author" value="{{ old('author') }}">
-                        @error('author')
+                        <label for="InputArtist" class="form-label">Artist</label>
+                        <input type="text" class="form-control @error('artist') is-invalid @enderror"
+                            id="InputArtist" name="artist" value="{{ old('artist') }}">
+                        @error('artist')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                     </div>

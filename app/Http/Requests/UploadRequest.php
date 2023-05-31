@@ -23,7 +23,7 @@ class UploadRequest extends FormRequest
     {
         return [
             'title' => 'required|min:2',
-            'author' => 'required|min:5',
+            'artist' => 'required|min:5',
             'cover' => 'required|image',
             'date' => 'required|numeric|digits:4'
         ];

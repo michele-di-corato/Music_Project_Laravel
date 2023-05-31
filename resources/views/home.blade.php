@@ -1,1 +1,1 @@
-<x-layout title="Homepage"></x-layout>
+<x-layout title="Homepage" heading="Your online music portal"></x-layout>

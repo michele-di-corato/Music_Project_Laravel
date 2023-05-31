@@ -1,4 +1,4 @@
-<x-layout title="Customer Support">
+<x-layout title="Customer Support" heading="Customer Support">
     <main class="container-fluid">
         <div class="row justify-content-center">
             @if (session('status'))

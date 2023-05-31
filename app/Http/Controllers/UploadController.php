@@ -21,7 +21,7 @@ class UploadController extends Controller
         $song = Upload::create(
             [
                 'title' => $request->title,
-                'author' => $request->author,
+                'artist' => $request->artist,
                 'date' => $request->date,
                 'cover' => $request->file('cover')->store('public/media')
             ]

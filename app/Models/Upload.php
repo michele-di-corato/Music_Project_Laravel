@@ -9,5 +9,5 @@ class Upload extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'author', 'date', 'cover'];
+    protected $fillable = ['title', 'artist', 'date', 'cover'];
 }

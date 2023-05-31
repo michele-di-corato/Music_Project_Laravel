@@ -1,4 +1,4 @@
-<x-layout title="Music Library">
+<x-layout title="Library" heading="Songs library">
     <main class="container-fluid">
         <div class="row w-100">
             @if (session('status'))

@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <x-header />
+    <x-header heading="{{ $heading ?? 'Music Library' }}" />
     <x-navbar />
     {{ $slot }}
     <x-footer />
