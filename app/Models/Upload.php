@@ -9,5 +9,10 @@ class Upload extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'artist', 'date', 'cover'];
+    protected $fillable = ['title', 'artist', 'date', 'cover', 'user_id'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

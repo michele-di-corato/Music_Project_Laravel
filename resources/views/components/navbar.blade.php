@@ -25,7 +25,7 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Your profile</a></li>
                             <li>
-                                <form action="POST" action="{{ route('logout') }}">
+                                <form method="POST" action="{{ route('logout') }}">
                                     @csrf
                                     <button class="dropdown-item" type="submit">Logout</button>
                                 </form>

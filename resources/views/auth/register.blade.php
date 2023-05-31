@@ -20,7 +20,10 @@
                         <label for="ConfirmPassword" class="form-label">Confirm your password</label>
                         <input type="password" class="form-control" id="ConfirmPassword" name="password_confirmation">
                     </div>
-                    <x-button />
+                    <div class="mb-3 d-flex align-items-center">
+                        <x-button />
+                        <p class="m-2">Already registered? <a href="{{ route('login') }}">Login now!</a></p>
+                    </div>
                 </form>
             </div>
         </div>

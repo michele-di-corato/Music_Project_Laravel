@@ -12,7 +12,10 @@
                         <label for="InputPassword" class="form-label">Enter your password</label>
                         <input type="password" class="form-control" id="InputPassword" name="password">
                     </div>
-                    <x-button />
+                    <div class="mb-3 d-flex align-items-center">
+                        <x-button />
+                        <p class="m-2">New user? <a href="{{ route('register') }}">Register now!</a></p>
+                    </div>
                 </form>
             </div>
         </div>

@@ -23,10 +23,16 @@ Route::get('/support', [PublicController::class, 'support'])->name('support');
 
 Route::post('/support/send', [PublicController::class, 'send'])->name('sendMail');
 
-Route::get('/upload_a_song', [UploadController::class, 'upload'])->name('upload');
+Route::get('/library', [UploadController::class, 'index'])->name('library');
 
-Route::get('/library', [UploadController::class, 'library'])->name('library');
+Route::get('/library/song_details/{id}', [UploadController::class, 'show'])->name('songDetails');
 
-Route::post('/upload_a_song/save_song', [UploadController::class, 'saveSong'])->name('saveSong');
+Route::get('/upload_a_song', [UploadController::class, 'create'])->name('upload');
 
-Route::get('/library/song_details/{id}', [UploadController::class, 'details'])->name('songDetails');
+Route::post('/upload_a_song/save_song', [UploadController::class, 'store'])->name('saveSong');
+
+Route::get('/edit_song/{song}', [UploadController::class, 'edit'])->name('editSong');
+
+Route::put('/edit_song/update/{song}', [UploadController::class, 'update'])->name('updateSong');
+
+Route::delete('/delete_song/{song}', [UploadController::class, 'destroy'])->name('deleteSong');
